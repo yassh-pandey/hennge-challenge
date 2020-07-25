@@ -1,0 +1,165 @@
+.MailCardContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 4px 0px;
+    box-shadow: 0px 1px 2px #dedede;
+    position: relative;
+}
+.MailCardContainer .mailIconMV{
+    position: absolute;
+    display: none;
+}
+.MailCardContainer .mailIconMV .mailIcon{
+    width: 15px;
+}
+.MailCardContainer .rightArrowIconMV{
+    position: absolute;
+    display: none;
+}
+.MailCardContainer .rightArrowIconMV .rightArrowIcon{
+    height: 7px;
+}
+.MailCardContainer .attachmentIconMV{
+    position: absolute;
+    display: none;
+}
+.MailCardContainer .attachmentIconMV .attachIcon{
+    height: 16px;
+}
+.MailCardContainer .mailCardElement{
+    padding: 16px 0px;
+    margin-left: 16px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+}
+.MailCardContainer:hover{
+    cursor: pointer;
+    background-color: #f6f8fa;
+}
+.MailCardContainer:hover .mailCardElement{
+    color: #0033dd;
+}
+.MailCardContainer .mailCardElement:nth-child(1){
+    width: 15%;
+}
+.MailCardContainer .mailCardElement:nth-child(2){
+    width: 20%;
+    overflow: visible;
+    display: flex;
+}
+.MailCardContainer .mailCardElement:nth-child(3){
+    width: 45%;
+    padding-left: 64px;
+    display: flex;
+    flex-grow: 0;
+}
+.MailCardContainer .mailCardElement:nth-child(4){
+    text-align: right;
+    margin-right: 16px;
+    font-weight: bolder;
+    color: black;
+}
+.MailCardContainer .mailCardElement .multipleForward{
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.MailCardContainer .mailCardElement .multipleForward .noOfExtraForwards{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #888888;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 2px;
+    min-width: 24px;
+}
+.MailCardContainer .mailCardElement .attachmentIconWrapper{
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+.MailCardContainer .mailCardElement .attachmentIconWrapper .attachmentIcon{
+    width: 18px;
+}
+@media (max-width: 1200px){
+    .MailCardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+    }
+    .MailCardContainer .mailCardElement{
+        padding: 0px;
+        margin: 0px;
+        overflow: unset; 
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .MailCardContainer .mailIconMV{
+        display: inline-block;
+        top: 18px;
+        left: 16px;
+    }
+    .MailCardContainer .mailCardElement:nth-child(n){
+        width: 100%;
+    }
+    .MailCardContainer .mailCardElement:nth-child(1){
+        font-weight: bolder;
+        color: #333333;
+        margin-left: 40px;
+    }
+    .MailCardContainer .mailCardElement:nth-child(2){
+        margin-left: 40px;
+        color: #333333;
+    }
+    .MailCardContainer .mailCardElement:nth-child(3){
+        width: 85%;
+        display: block;
+        margin-left: 16px;
+        padding: 0px;
+        color: #333333;
+        font-size: 18px;
+    }
+    .MailCardContainer .mailCardElement:nth-child(3) span{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .MailCardContainer .mailCardElement:nth-child(4){
+        position: absolute;
+        right: 14px;
+        color: #333333;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .MailCardContainer .rightArrowIconMV{
+        display: inline-block;
+        right: 22px;
+        top: 10px;
+    }
+    .MailCardContainer .attachmentIconMV{
+        display: inline-block;
+        right: 8px;
+    }
+    .MailCardContainer .mailCardElement .multipleForward{
+        display: inline;
+        position: absolute;
+        top: 44px;
+        right: 22px;
+    }
+    .MailCardContainer .mailCardElement .multipleForward .noOfExtraForwards{
+        min-width: 12px;
+        padding: 2px 3px;
+        font-size: 12px;
+    }
+}

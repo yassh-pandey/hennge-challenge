@@ -1,0 +1,33 @@
+.ShowMessageContainer{
+    height: 100%;
+}
+.ShowMessageContainer .showMessageToggleButtonContainer{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.ShowMessageContainer .showMessageToggleButtonContainer .showMessageToggleButtonWrapper {
+    display: inline-flex;
+    position: absolute;
+    right: 64px;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.ShowMessageContainer .showMessageToggleButtonContainer .showMessageToggleButtonWrapper .toggleButtonDescription{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    position: absolute;
+    left: -120px;
+}
+@media (max-width: 900px){
+    .ShowMessageContainer{
+    }
+    .ShowMessageContainer .showMessageToggleButtonContainer{
+        display: none;
+    }
+}

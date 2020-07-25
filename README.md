@@ -1,3 +1,24 @@
+## How to view the markup
+
+Please follow the guide below to install the project. This project uses react-router-dom so different views are available on 
+specific routes relative to http://localhost:3000 
+
+**NOTE:** When you open the link : http://localhost:3000/inspect for mission 3 then there is a UI component: <ToggleButton> which will be displayed on the top right corner of the screen. This button acts like a switch to show multiple emails at the same time and is turned on by default. I have added a max limit of 3 email bodies that you can inspect at together at the same time and then the last element of the stack will be removed if you click on the 4th email. Play with the website to know more or contact me via email if you have any doubts.
+
+- Mission 1 is available at: 
+&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/ :  To see the EMPTY mail box component please open this url in your browser
+&nbsp;&nbsp;&nbsp;&nbsp; 2. http://localhost:3000/imbox : To see the POPULATED mail box component please open this url in your browser
+
+- Mission 2 is available at: 
+&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/inspect :  To see the redesigned mail box component which lets you inspect 
+&nbsp;&nbsp;&nbsp;&nbsp; multiple  emails at a time please open this url in your browser
+
+- Mission 3 is available at: 
+&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/views: To see the my views and opinion on the UI please open this url in your browser
+
+Change the Viewport of the browser via developer tools to see the responsive layout.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

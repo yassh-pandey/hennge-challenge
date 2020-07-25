@@ -1,0 +1,34 @@
+.InspectEmailContainer{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 480px;
+}
+.InspectEmailContainer .inspectEmailEmailCardsContainer{
+    width: 480px;
+    position: relative;
+}
+.InspectEmailContainer .inspectEmailShowMessageContainer{
+    width: calc(100% - 480px)
+}
+.InspectEmailContainer .inspectEmailEmailCardsContainer .inspectEmailEmailCardsHeaderContainer{
+    width: 480px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+@media (max-width: 900px){
+    .InspectEmailContainer{
+        min-width: 100%;
+        width: 100%;
+    }
+    .InspectEmailContainer .inspectEmailEmailCardsContainer{
+        width: 100%;
+        min-width: 100%;
+    }
+    .InspectEmailContainer .inspectEmailShowMessageContainer{
+        width: 100%;
+    }
+    .InspectEmailContainer .inspectEmailEmailCardsContainer .inspectEmailEmailCardsHeaderContainer{
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+.ToggleButtonContainer{
+    width: 58px;
+    height: 28px;
+    padding: 8px;
+    background-color: #cccccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ToggleButtonContainer .ToggleButtonCircle{
+    display: inline-flex;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+}

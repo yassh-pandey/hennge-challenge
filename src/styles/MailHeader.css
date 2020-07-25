@@ -1,0 +1,92 @@
+.MailHeaderContainer{
+    display: flex;
+    background-color: #f5f5f5;
+    width: 100%;
+    box-shadow: 0px 2px 3px #dedede, 0px -2px 3px #dedede;
+}
+.MailHeaderContainer .mailHeaderElement{
+    color: #666666;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 16px 0px;
+    margin-left: 16px;
+    display: flex;
+}
+.MailHeaderContainer .mailHeaderElement:nth-child(1) .upArrowWrapper{
+    display: none;
+}
+.MailHeaderContainer .mailHeaderElement:nth-child(1){
+    flex-basis: 15%;
+}
+.MailHeaderContainer .mailHeaderElement:nth-child(2){
+    flex-basis: 20%;
+}
+.MailHeaderContainer .mailHeaderElement:nth-child(3){
+    flex-basis: 45%;
+    padding-left: 64px;
+}
+.MailHeaderContainer .mailHeaderElement:nth-child(4){
+    display: block;
+    text-align: right;
+    color: black;
+    margin-right: 16px;
+}
+.MailHeaderContainer .mailHeaderElement .upArrowWrapper{
+    margin-left: 8px;
+}
+.MailHeaderContainer .mailHeaderElement .upArrowWrapper .upArrow{
+    width: 12px;
+}
+
+@media (max-width: 1200px){
+    .MailHeaderContainer{
+        display: flex;
+        background-color: #f5f5f5;
+        width: 100%;
+        box-shadow: 0px 2px 3px #dedede, 0px -2px 3px #dedede;
+    }
+    .MailHeaderContainer .mailHeaderElement{
+        color: #666666;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: sans-serif;
+        padding: 16px 0px;
+        display: flex;
+        margin-left: 0px;
+        position: relative;
+    }
+    .MailHeaderContainer .mailHeaderElement::after{
+        position: absolute;
+        width: 0.5px;
+        content: "";
+        background-color: #666666;
+        right: 0px;
+        top: 18px;
+        bottom: 15px;
+    }
+    .MailHeaderContainer .mailHeaderElement:nth-child(4)::after{
+        content: none;
+    }
+    .MailHeaderContainer .mailHeaderElement:nth-child(n){
+        flex-basis: 50px;
+        width: 50px;
+        text-align: left;
+        justify-content: center;
+        padding-left: 0px;
+        padding: 16px;
+    }
+    .MailHeaderContainer .mailHeaderElement:nth-child(4){
+        color: #666666;
+    }
+    .MailHeaderContainer .mailHeaderElement:nth-child(4) .upArrowWrapper{
+        display: none;
+    }
+    .MailHeaderContainer .mailHeaderElement:nth-child(1){
+        color: black;
+    }
+    .MailHeaderContainer .mailHeaderElement:nth-child(1) .upArrowWrapper{
+        display: block;
+        margin-left: 2px;
+    }
+}

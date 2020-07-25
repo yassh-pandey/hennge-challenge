@@ -1,0 +1,50 @@
+.MessageCardContainer{
+    width: 60%;
+    position: relative;
+    box-shadow: 0px 0px 10px -4px rgba(1,1,1,0.4);
+    background:linear-gradient(135deg, #f8f8fc 0%,#f0f0f8 100%);
+    padding: 16px 32px;
+    margin-bottom: 32px;
+    transition: transform ease-in-out 200ms;
+    backface-visibility: hidden;
+}
+.MessageCardContainer:hover{
+    transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+    box-shadow: 2px 2px 10px -4px rgba(1,1,1,0.5);
+}
+.MessageCardContainer .goBackButtonWrapper{
+    position: absolute;
+    display: none;
+    background-color: black;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: -60px;
+    left: 0px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(1,1,1,0.5);
+}
+.MessageCardContainer .goBackButtonWrapper .goBackButton{
+    width: 20px;
+}
+.MessageCardContainer .messageCardElement{
+    padding: 6px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.MessageCardContainer .messageCardElement .messageCardElementTitle{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 900px){
+    .MessageCardContainer{
+       width: 90%
+    }
+    .MessageCardContainer:hover{
+        transform: unset;
+        box-shadow: 0px 0px 10px -4px rgba(1,1,1,0.4);
+     }
+    .MessageCardContainer .goBackButtonWrapper{
+        display: inline-flex;
+    }
+}

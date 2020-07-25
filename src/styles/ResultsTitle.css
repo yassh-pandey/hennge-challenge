@@ -1,0 +1,36 @@
+.ResultsTitleContainer::after{
+    position: absolute;
+    content: "";
+    width: calc(100% - 100px);
+    height: 2px;
+    background-color: #dedede;
+    bottom: -5px;
+}
+.ResultsTitleContainer{
+    position: relative;
+}
+.ResultsTitleContainer .ResultsTitleText{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #666666;
+    font-size: 19px;
+}
+.ResultsTitleContainer .ResultsTitleText .noOfResults{
+    font-size: 18px;
+    text-align: right;
+    position: relative;
+    font-weight: bolder;
+    left: 3px;
+}
+@media (max-width: 1200px){
+    .ResultsTitleContainer{
+        width: 100%;
+        left: 16px;
+    }
+    .ResultsTitleContainer .ResultsTitleText{
+        font-size: 14px;
+    }
+    .ResultsTitleContainer .ResultsTitleText .noOfResults{
+        font-size: 15px;
+    }
+}

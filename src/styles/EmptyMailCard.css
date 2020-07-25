@@ -1,0 +1,27 @@
+.EmptyMailCardContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    user-select: none;
+}
+.EmptyMailCardContainer .restArea{
+    height: 100%;
+    width: 100%;
+}
+.EmptyMailCardContainer .emptyMailCardLogoWrapper{
+    position: sticky;
+    top: calc(50% - 62px);
+    z-index: 30;
+}
+.EmptyMailCardContainer .emptyMailCardLogoWrapper .emptyLogo{
+}
+
+@media (max-width: 900px){
+    .EmptyMailCardContainer{
+        display: none;
+    }
+}

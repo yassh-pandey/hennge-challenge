@@ -1,0 +1,130 @@
+.EmailCardContainer{
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px -2px 2px #f1f3f4;
+}
+.mailSelected{
+    position: relative;
+}
+.mailSelected::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 5px;
+    background-color: #0078d4;
+}
+.EmailCardContainer:hover{
+    background-color: #eff7fe;
+}
+.EmailCardContainer .emailCardElement:nth-child(n){
+    margin-left: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px 0px;
+}
+.EmailCardContainer .emailCardElement:nth-child(1){
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 10px;
+}
+.EmailCardContainer .emailCardElement:nth-child(2){
+    color: #0078d4;
+    font-weight: bolder;
+    font-size: 16px;
+    max-width: 300px;
+}
+.EmailCardContainer .emailCardElement:nth-child(3){
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.EmailCardContainer .emailCardElement:nth-child(4){
+    margin-bottom: 10px;
+}
+.EmailCardContainer .emailCardElement:nth-child(5){
+    position: absolute;
+    color: #0078d4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    top: 10px;
+    right: 30px;
+}
+.EmailCardContainer .emailCardElement .emailCardBodySpan{
+    display: inline-block;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #888888;
+}
+.EmailCardContainer .emailCardElement .emailCardAttachmentIconWrapper{
+    position: absolute;
+    left: -30px;
+}
+.EmailCardContainer .emailCardElement .emailCardAttachmentIconWrapper .emailCardAttachmentIcon{
+    height: 18px;
+}
+.EmailCardContainer .emailCardElement .emailCardToMultipleSpan{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.EmailCardContainer .emailCardElement .emailCardMultipleEmailForwardWrapper{
+    position: absolute;
+    top: 26px;
+    right: 10px;
+}
+.EmailCardContainer .emailCardElement .emailCardMultipleEmailForwardWrapper .emailCardMultipleEmailForward{
+    display: inline-block;
+    color: white;
+    background-color: #0078d4;
+    padding: 1.5px 3px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 900px){
+    .EmailCardContainer{
+        width: 100%;
+        min-width: 100%;
+    }
+    .EmailCardContainer .emailCardElement:nth-child(n){
+        margin-left: 16px;
+        max-width: calc(100% - 100px);
+    }
+    .EmailCardContainer .emailCardElement:nth-child(3){
+        font-size: 14px;
+    }
+    .EmailCardContainer .emailCardElement .emailCardBodySpan{
+        width: 60%
+    }
+    .EmailCardContainer .emailCardElement .emailCardToMultipleSpan{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .EmailCardContainer .emailCardElement .emailCardBodySpan{
+        font-size: 16px;
+        width: 100%
+    }
+    .EmailCardContainer .emailCardElement .emailCardToMultipleSpan{
+        width: 70%;
+    }
+    .EmailCardContainer .emailCardElement:nth-child(n){
+        font-size: 14px;
+    }
+}
