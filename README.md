@@ -10,11 +10,10 @@ specific routes relative to http://localhost:3000 .
 &nbsp;&nbsp;&nbsp;&nbsp; 2. http://localhost:3000/imbox : To see the POPULATED mail box component please open this url in your browser. <br />
 
 - Mission 2 is available at: <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/inspect :  To see the redesigned mail box component which lets you inspect. <br />
-&nbsp;&nbsp;&nbsp;&nbsp; multiple  emails at a time please open this url in your browser.
+&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/inspect :  To see the redesigned mail box component which lets you inspect multiple  emails at a time please open this url in your browser.
 
 - Mission 3 is available at: <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/views: To see the my views and opinion on the UI please open this url in your browser.
+&nbsp;&nbsp;&nbsp;&nbsp; 1. http://localhost:3000/views: To see my views and opinion on the UI please open this url in your browser.<br/>
 
 **Change the Viewport of the browser via developer tools to see the responsive layout.**
 
