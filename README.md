@@ -1,9 +1,9 @@
 ## Sample UI provided to built 
-![mailbox empty](https://github.com/yassh-pandey/hennge-challenge/tree/master/src/assets/sample0.png)
+![mailbox empty](https://github.com/yassh-pandey/hennge-challenge/blob/master/design%20specification/sample0.png)
 <br />
-![mailbox populated](https://github.com/yassh-pandey/hennge-challenge/tree/master/src/assets/sample1.png)
+![mailbox populated](https://github.com/yassh-pandey/hennge-challenge/blob/master/design%20specification/sample1.png)
 <br />
-![responsive mailbox](https://github.com/yassh-pandey/hennge-challenge/tree/master/src/assets/sample2.png)
+![responsive mailbox](https://github.com/yassh-pandey/hennge-challenge/blob/master/design%20specification/sample2.png)
 ## How to view the mockup
 
 Please follow the guide below to install the project. This project uses react-router-dom so different views are available on 
