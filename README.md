@@ -1,9 +1,16 @@
 ## Sample UI provided to built 
+- This is how empty mail box is expected to look:
+
 ![mailbox empty](https://github.com/yassh-pandey/hennge-challenge/blob/master/design%20specification/sample0.png)
-<br />
+
+- This is how populated mail box is expected to look:
+
 ![mailbox populated](https://github.com/yassh-pandey/hennge-challenge/blob/master/design%20specification/sample1.png)
-<br />
+
+- Mailbox on mobile viewport 
+
 ![responsive mailbox](https://github.com/yassh-pandey/hennge-challenge/blob/master/design%20specification/sample2.png)
+
 ## How to view the mockup
 
 Please follow the guide below to install the project. This project uses react-router-dom so different views are available on 
