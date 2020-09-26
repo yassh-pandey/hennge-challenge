@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/EmptyMail.css'
-import 'react-calendar/dist/Calendar.css';
 import Calendar from './Calendar'
 import ResultsTitle from './ResultsTitle'
 import logo from '../assets/logo.png'
