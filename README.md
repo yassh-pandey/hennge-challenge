@@ -1,3 +1,9 @@
+# Link to live working demo:
+- <strong>Redesigned mailbox: https://hardcore-ptolemy-f6d4e5.netlify.app/inspect</strong> 
+- Populated mailbox(implemented the given design specification): https://hardcore-ptolemy-f6d4e5.netlify.app/imbox
+- Empty mailbox (implemented the given design specification): https://hardcore-ptolemy-f6d4e5.netlify.app/
+- Perspective on the provided design: https://hardcore-ptolemy-f6d4e5.netlify.app/views
+
 ## Sample UI provided to built 
 - This is how empty mail box is expected to look:
 
